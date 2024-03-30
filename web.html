@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Symptom Checker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <img src="check.jpg" alt="Health Logo" class="logo">
+        <h1>Asthma checker</h1>
+        <form id="symptomForm">
+        <from method="POST",action="{{url_for{'web'}}}">
+        <label for="tierdness">Tierdness:</label>
+            <input type="text" id="tierdness" name="tierdness" required>
+            
+        <label for="dryCough">Dry Cough:</label>
+            <input type="text" id="dryCough" name="dryCough" required>
+            
+        <label for="difficultyBreathing">Difficulty in Breathing:</label>
+            <input type="text" id="difficultyBreathing" name="difficultyBreathing" required>
+            
+        <label for="soreThroat">Sore Throat:</label>
+            <input type="text" id="soreThroat" name="soreThroat" required>
+        <label for="noneSymptom">NoneSymptom:</label>
+            <input type="text" id="noneSymptom" name="noneSymptom" required>
+
+	    <label for="pains">Pains:</label>
+            <input type="text" id="pains" name="pains" required>
+
+	    <label for="nasalCongestion">NasalCongestion:</label>
+            <input type="text" id="nasalCongestion" name="nasalCongestion" required>
+
+	    <label for="runningNose">Running Nose:</label>
+            <input type="text" id="runningNose" name="runningNose" required>
+
+	    <label for="none_Experiencing">None_Experiencing:</label>
+            <input type="text" id="none_Experiencing" name="none_Experiencing" required>
+
+	
+	   
+           
+            <div>
+                <input type="submit" value="predict">
+                <a href="new.html">Submit</a>
+            </div>
+        </form>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
